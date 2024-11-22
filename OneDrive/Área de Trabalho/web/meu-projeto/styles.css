@@ -201,3 +201,63 @@
     font-weight: bold;
     color: #333;
 }
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.carrossel {
+    position: relative;
+    max-width: 100%;
+    margin: 20px 0;
+    overflow: hidden;
+}
+.imagens {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.imagem {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+.seta-esquerda {
+    left: 10px;
+}
+.seta-direita {
+    right: 10px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4ec5e2;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.carousel-item {
+  position: relative; /* Para posicionar o título de forma absoluta */
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+}
